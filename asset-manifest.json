@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/ConHiggins/oxnaTicketSystem/static/css/main.073c9b0a.css",
-    "main.js": "/ConHiggins/oxnaTicketSystem/static/js/main.136d46f0.js",
+    "main.js": "/ConHiggins/oxnaTicketSystem/static/js/main.5328e842.js",
     "static/js/787.9338ae2c.chunk.js": "/ConHiggins/oxnaTicketSystem/static/js/787.9338ae2c.chunk.js",
     "static/media/logo.svg": "/ConHiggins/oxnaTicketSystem/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/ConHiggins/oxnaTicketSystem/index.html",
     "main.073c9b0a.css.map": "/ConHiggins/oxnaTicketSystem/static/css/main.073c9b0a.css.map",
-    "main.136d46f0.js.map": "/ConHiggins/oxnaTicketSystem/static/js/main.136d46f0.js.map",
+    "main.5328e842.js.map": "/ConHiggins/oxnaTicketSystem/static/js/main.5328e842.js.map",
     "787.9338ae2c.chunk.js.map": "/ConHiggins/oxnaTicketSystem/static/js/787.9338ae2c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.136d46f0.js"
+    "static/js/main.5328e842.js"
   ]
 }
