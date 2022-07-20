@@ -34,8 +34,8 @@ function App() {
 
   return (
     <div className="App">
-      <Searchbar searchTerm={searchTerm} handleInput={handleInput} />
-      <Dropdown filterTerm={filterTerm} handleSelection={handleSelection} />
+      <Searchbar className="app-search" searchTerm={searchTerm} handleInput={handleInput} />
+      <Dropdown className="app-search" filterTerm={filterTerm} handleSelection={handleSelection} />
       <Employees arr={filteredEmployees} />
     </div>
   );

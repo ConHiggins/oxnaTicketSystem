@@ -1,5 +1,5 @@
 .employees {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -16,7 +16,7 @@
   box-shadow: 0 1rem #151f3f;
   margin: 2rem;
   background: linear-gradient(0, #ab3428, #1e4c5f);
-  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  transition: transform 0.5s ease, box-shadow 0.4s ease;
 }
 .employees .employee-card__display {
   margin: 1rem;
@@ -24,11 +24,11 @@
   border: 2px solid #1e4c5f;
   background: linear-gradient(0, #f5ee9e, #1e4c5f);
   transition: opacity 0.3s ease;
-  opacity: 0.25;
+  opacity: 1;
   position: relative;
 }
 .employees .employee-card__display::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -59,13 +59,13 @@
   border-radius: 50%;
   background-color: #f49e4c;
   border: none;
-  width: 3rem;
-  height: 3rem;
-  margin: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+  margin: 1rem;
   color: #1e4c5f;
 }
 .employees fieldset:before {
-  content: '';
+  content: "";
   display: block;
   background: linear-gradient(0, #ab3428, #151f3f);
   opacity: 0;
@@ -80,4 +80,4 @@
 }
 .employees .employee-card:hover > fieldset:before {
   opacity: 0;
-} /*# sourceMappingURL=Employees.css.map */
+}/*# sourceMappingURL=Employees.css.map */
