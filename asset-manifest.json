@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/oxnaTicketSystem/static/css/main.d4ca64c0.css",
-    "main.js": "/oxnaTicketSystem/static/js/main.bbca766d.js",
+    "main.css": "/oxnaTicketSystem/static/css/main.b0387d64.css",
+    "main.js": "/oxnaTicketSystem/static/js/main.c5678ef2.js",
     "static/js/787.9338ae2c.chunk.js": "/oxnaTicketSystem/static/js/787.9338ae2c.chunk.js",
     "static/media/logo.svg": "/oxnaTicketSystem/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/oxnaTicketSystem/index.html",
-    "main.d4ca64c0.css.map": "/oxnaTicketSystem/static/css/main.d4ca64c0.css.map",
-    "main.bbca766d.js.map": "/oxnaTicketSystem/static/js/main.bbca766d.js.map",
+    "main.b0387d64.css.map": "/oxnaTicketSystem/static/css/main.b0387d64.css.map",
+    "main.c5678ef2.js.map": "/oxnaTicketSystem/static/js/main.c5678ef2.js.map",
     "787.9338ae2c.chunk.js.map": "/oxnaTicketSystem/static/js/787.9338ae2c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4ca64c0.css",
-    "static/js/main.bbca766d.js"
+    "static/css/main.b0387d64.css",
+    "static/js/main.c5678ef2.js"
   ]
 }
