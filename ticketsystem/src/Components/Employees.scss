@@ -1,70 +1,97 @@
-@use "../_vars.scss" as *;
-
+@use '../_vars.scss' as *;
 
 .employees {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10rem;
+  background-color: $bg-col;
 
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 10rem;
-    background-color: $bg-col;
+  .employee-card {
+    width: 20rem;
+    height: 30rem;
+    text-align: center;
+    border: 2px solid $sec-col;
+    border-bottom: none;
+    border-radius: 1rem;
+    box-shadow: 0 1rem $bg-main;
+    margin: 2rem;
+    background: linear-gradient(0, $con-col, $bg-col);
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
 
-    .employee-card {
-
-        width: 20rem;
-        height: 30rem;
-        text-align: center;
-        border: 2px solid $sec-col;
-        border-bottom: none;
-        border-radius: 1rem;
-        box-shadow: 0 1rem $bg-main;
-        margin: 2rem;
-        background: linear-gradient(0, $con-col, $bg-col);
-        transition: transform 0.5s ease, box-shadow 0.3s ease;
-
-        fieldset {
-            margin: 1rem;
-            margin-top: 2rem;
-            border: 2px solid $bg-col; 
-            background: linear-gradient(0, $bg-main, $bg-col);
-        }
-
-        &__name {
-
-            font-size: 2rem;
-            color: $hi-col;
-        }
-
-        &__role {
-
-            font-size: 1.5rem;
-            color: $sec-col;
-        }
-
-        &__ticket-count {
-            font-size: 2rem;
-            color: $hi-col;
-        }
-
-        &__button {
-
-            font-size: 2rem;
-            border-radius: 50%;
-            background-color: $sec-col;
-            border: none;
-            width:3rem;
-            height:3rem;
-            margin: 0.5rem;
-            color: $bg-col;
-        }
+    &__display {
+      margin: 1rem;
+      margin-top: 2rem;
+      border: 2px solid $bg-col;
+      background: linear-gradient(0, $hi-col, $bg-col);
+      transition: opacity 0.3s ease;
+      opacity: 0.25;
+      position: relative;
     }
 
-    .employee-card:hover {
-        transform: scale(1.1);
-        
-        box-shadow: 0 1.5rem $bg-main;
-
+    &__display::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      border: 2px solid $bg-col;
+      background: linear-gradient(0, $bg-col, $bg-main);
+      transition: opacity 0.3s ease;
+      opacity: 1;
     }
 
+    &__name {
+      font-size: 2rem;
+      color: $hi-col;
+      z-index: 100;
+    }
+
+    &__role {
+      font-size: 1.5rem;
+      color: $bg-col;
+      z-index: 100;
+    }
+
+    &__ticket-count {
+      font-size: 2rem;
+      color: $hi-col;
+    }
+
+    &__button {
+      font-size: 2rem;
+      border-radius: 50%;
+      background-color: $sec-col;
+      border: none;
+      width: 3rem;
+      height: 3rem;
+      margin: 0.5rem;
+      color: $bg-col;
+    }
+  }
+
+  fieldset:before {
+    content: '';
+    display: block;
+    background: linear-gradient(0, $con-col, $bg-main);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .employee-card:hover {
+    transform: scale(1.1);
+
+    box-shadow: 0 1.5rem $bg-main;
+
+    > fieldset {
+      opacity: 1;
+    }
+
+    > fieldset:before {
+      opacity: 0;
+    }
+  }
 }

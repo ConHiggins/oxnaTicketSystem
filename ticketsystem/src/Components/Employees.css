@@ -1,5 +1,5 @@
 .employees {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -18,19 +18,37 @@
   background: linear-gradient(0, #ab3428, #1e4c5f);
   transition: transform 0.5s ease, box-shadow 0.3s ease;
 }
-.employees .employee-card fieldset {
+.employees .employee-card__display {
   margin: 1rem;
   margin-top: 2rem;
   border: 2px solid #1e4c5f;
-  background: linear-gradient(0, #151f3f, #1e4c5f);
+  background: linear-gradient(0, #f5ee9e, #1e4c5f);
+  transition: opacity 0.3s ease;
+  opacity: 0.25;
+  position: relative;
+}
+.employees .employee-card__display::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border: 2px solid #1e4c5f;
+  background: linear-gradient(0, #1e4c5f, #151f3f);
+  transition: opacity 0.3s ease;
+  opacity: 1;
 }
 .employees .employee-card__name {
   font-size: 2rem;
   color: #f5ee9e;
+  z-index: 100;
 }
 .employees .employee-card__role {
   font-size: 1.5rem;
-  color: #f49e4c;
+  color: #1e4c5f;
+  z-index: 100;
 }
 .employees .employee-card__ticket-count {
   font-size: 2rem;
@@ -46,7 +64,20 @@
   margin: 0.5rem;
   color: #1e4c5f;
 }
+.employees fieldset:before {
+  content: '';
+  display: block;
+  background: linear-gradient(0, #ab3428, #151f3f);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
 .employees .employee-card:hover {
   transform: scale(1.1);
   box-shadow: 0 1.5rem #151f3f;
-}/*# sourceMappingURL=Employees.css.map */
+}
+.employees .employee-card:hover > fieldset {
+  opacity: 1;
+}
+.employees .employee-card:hover > fieldset:before {
+  opacity: 0;
+} /*# sourceMappingURL=Employees.css.map */
