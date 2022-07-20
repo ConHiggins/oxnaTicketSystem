@@ -1,4 +1,5 @@
 .employees {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -12,11 +13,16 @@
   border: 2px solid #f49e4c;
   border-bottom: none;
   border-radius: 1rem;
+  box-shadow: 0 1rem #151f3f;
   margin: 2rem;
   background: linear-gradient(0, #ab3428, #1e4c5f);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .employees .employee-card fieldset {
   margin: 1rem;
+  margin-top: 2rem;
+  border: 2px solid #1e4c5f;
+  background: linear-gradient(0, #151f3f, #1e4c5f);
 }
 .employees .employee-card__name {
   font-size: 2rem;
@@ -39,4 +45,8 @@
   height: 3rem;
   margin: 0.5rem;
   color: #1e4c5f;
+}
+.employees .employee-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 1.5rem #151f3f;
 }/*# sourceMappingURL=Employees.css.map */

@@ -3,6 +3,7 @@
 
 .employees {
 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -17,11 +18,16 @@
         border: 2px solid $sec-col;
         border-bottom: none;
         border-radius: 1rem;
+        box-shadow: 0 1rem $bg-main;
         margin: 2rem;
         background: linear-gradient(0, $con-col, $bg-col);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
 
         fieldset {
             margin: 1rem;
+            margin-top: 2rem;
+            border: 2px solid $bg-col; 
+            background: linear-gradient(0, $bg-main, $bg-col);
         }
 
         &__name {
@@ -52,6 +58,13 @@
             margin: 0.5rem;
             color: $bg-col;
         }
+    }
+
+    .employee-card:hover {
+        transform: scale(1.1);
+        
+        box-shadow: 0 1.5rem $bg-main;
+
     }
 
 }
