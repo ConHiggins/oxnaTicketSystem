@@ -8,7 +8,7 @@ const Employees = ({arr}) => {
     <Employee name={employee.name} role={employee.role} />
   ));
 
-  return <div className="employees">{employeeCards};</div>;
+  return <div className="employees">{employeeCards}</div>;
 };
 
 export default Employees;
