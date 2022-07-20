@@ -5,12 +5,13 @@ import { useState } from 'react';
 import Employee from './Components/Employee/Employee';
 import Employees from './Components/Employees';
 import Searchbar from './Components/Searchbar/Searchbar';
+import Dropdown from './Components/Dropdown/Dropdown';
 
 
 
 function App() {
-
-  const [searchTerm, setSearchTerm] = useState('');
+////////////////////////////////////////////////////
+  const [searchTerm, setSearchTerm] = useState("");
 
   const handleInput = (event) => {
     const cleanInput =
@@ -19,15 +20,27 @@ function App() {
     setSearchTerm(cleanInput);
   };
 
+/////////////////////////////////////////////////
+
+  const [filterTerm, setFilterTerm] = useState("");
+
+  const handleSelection = (event) => {
+    const selection = event.target.value;
+    console.log(selection);
+    setFilterTerm(selection);
+  };
+
+  ///////////////////////////////////////////////
   const filteredEmployees = team.filter(employee => {
 
-    return employee.name.includes(searchTerm);
+    return employee.name.includes(searchTerm) && employee.role.includes(filterTerm); 
   })
 
   return (
     <div className="App">
 
       <Searchbar searchTerm={searchTerm} handleInput={handleInput} />
+      <Dropdown filterTerm={filterTerm} handleSelection={handleSelection} />
       <Employees arr={filteredEmployees} />
       
     </div>

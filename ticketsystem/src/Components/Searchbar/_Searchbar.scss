@@ -1,0 +1,28 @@
+@use"../../_vars.scss" as *;
+
+.search-bar-box{
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    top: 20%;
+}
+
+.search-bar {
+
+    &__title {
+        margin-top: 10rem;  
+        font-size: 2rem;
+        color: $hi-col;
+    }
+
+    width: 33%;
+    height: 3rem;
+    border-radius: 1rem;
+    
+    font-size: 2rem;
+}
