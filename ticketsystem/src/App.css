@@ -1,3 +1,7 @@
+* {
+  margin: none;
+}
+
 .App {
   height: 100%;
   background: linear-gradient(to right, #151f3f, #1e4c5f 8%, #1e4c5f 92%, #151f3f 100%);

@@ -16,7 +16,7 @@
   box-shadow: 0 1rem #151f3f;
   margin: 2rem;
   background: linear-gradient(0, #ab3428, #1e4c5f);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
 }
 .employees .employee-card fieldset {
   margin: 1rem;
