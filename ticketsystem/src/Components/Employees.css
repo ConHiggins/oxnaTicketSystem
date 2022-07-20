@@ -1,0 +1,42 @@
+.employees {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10rem;
+  background-color: #1e4c5f;
+}
+.employees .employee-card {
+  width: 20rem;
+  height: 30rem;
+  text-align: center;
+  border: 2px solid #f49e4c;
+  border-bottom: none;
+  border-radius: 1rem;
+  margin: 2rem;
+  background: linear-gradient(0, #ab3428, #1e4c5f);
+}
+.employees .employee-card fieldset {
+  margin: 1rem;
+}
+.employees .employee-card__name {
+  font-size: 2rem;
+  color: #f5ee9e;
+}
+.employees .employee-card__role {
+  font-size: 1.5rem;
+  color: #f49e4c;
+}
+.employees .employee-card__ticket-count {
+  font-size: 2rem;
+  color: #f5ee9e;
+}
+.employees .employee-card__button {
+  font-size: 2rem;
+  border-radius: 50%;
+  background-color: #f49e4c;
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  margin: 0.5rem;
+  color: #1e4c5f;
+}/*# sourceMappingURL=Employees.css.map */
